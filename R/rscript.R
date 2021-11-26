@@ -81,7 +81,9 @@ dev.off()
 bigbird <- df%>%select(article.word.counts,time.in.seconds,
   block.sparsity)%>%filter(block.sparsity == 1)
 
-g0<-ggplot(bigbird,aes(x = article.word.counts, y = time.in.seconds))+
+
+jpeg('myplot2.jpeg',width = 600, height = 600)
+ggplot(bigbird,aes(x = article.word.counts, y = time.in.seconds))+
   geom_point()+
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95,
         color = 'black', fill = 'black')+
@@ -96,11 +98,13 @@ g0<-ggplot(bigbird,aes(x = article.word.counts, y = time.in.seconds))+
   xlab('Word counts (in article text)')+
   ylab('Time per text summarization prediction (in seconds)')+
   ggtitle('Big Bird')
+dev.off()
 
 notbigbird <- df%>%select(article.word.counts,time.in.seconds,
                        block.sparsity)%>%filter(block.sparsity == 0)
 
-g1<-ggplot(notbigbird,aes(x = article.word.counts, y = time.in.seconds))+
+jpeg('myplot3.jpeg',width = 600, height = 600)
+ggplot(notbigbird,aes(x = article.word.counts, y = time.in.seconds))+
   geom_point()+
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95, 
         color = 'black', fill = 'black')+
@@ -115,6 +119,5 @@ g1<-ggplot(notbigbird,aes(x = article.word.counts, y = time.in.seconds))+
   xlab('Word counts (in article text)')+
   ylab('Time per text summarization prediction (in seconds)')+
   ggtitle('Transformers (XNET)')
-  
-grid.arrange(g0, g1, ncol=2)
+dev.off()
 
