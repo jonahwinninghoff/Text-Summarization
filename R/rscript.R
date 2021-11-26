@@ -54,13 +54,13 @@ dev.off()
 notbigbird<-df%>%select(time.in.seconds, block.sparsity)%>%filter(block.sparsity==0)
 compr<-cbind(df%>%select(time.in.seconds, block.sparsity)%>%filter(block.sparsity==1),
   notbigbird)[,c(1,3)]
-names(compr)<-c('Big Bird','Transformers (XNET)')
+names(compr)<-c('Big Bird','Transformers (XLNET)')
 summary(compr)
 
 # Timer violin plot
 forviolin <- df%>%select(time.in.seconds, block.sparsity)
 forviolin$block.sparsity <- ifelse(forviolin$block.sparsity == 1,"Big Bird", 
-  "Transformers (XNET)")
+  "Transformers (XLNET)")
 
 jpeg('myplot1.jpeg',width = 600, height = 600)
 ggplot(forviolin, aes(block.sparsity, time.in.seconds))+
@@ -118,6 +118,6 @@ ggplot(notbigbird,aes(x = article.word.counts, y = time.in.seconds))+
         plot.title = element_text(hjust = 0.5,size = 16))+
   xlab('Word counts (in article text)')+
   ylab('Time per text summarization prediction (in seconds)')+
-  ggtitle('Transformers (XNET)')
+  ggtitle('Transformers (XLNET)')
 dev.off()
 
