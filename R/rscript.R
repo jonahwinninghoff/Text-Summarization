@@ -35,7 +35,7 @@ jpeg('myplot.jpeg',width = 600, height = 600)
 ggplot(result, aes(fill=`Big Bird`, y=mean, x=metric)) + 
   geom_bar(position=dodge, stat="identity", color = 'black')+
   geom_errorbar(limits, position = dodge, width = 0.25)+
-  scale_fill_manual(values = c('black','white'))+
+  scale_fill_manual(values = c('black','#ffd966'))+
   scale_linetype_manual(values = c('black'))+
   theme(panel.background = element_rect(fill = '#ffd966'),
         panel.grid.minor = element_line(color = '#ffd966'),
