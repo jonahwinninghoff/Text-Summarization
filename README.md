@@ -64,7 +64,7 @@
 
 ## ACTIONABLE INSIGHTS <a id ='insights'></a>
 
-<img src="https://giphy.com/embed/RVRWYIjHhZiXXcYCeC" width="480" height="248"/>
+<img src = "https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/comparing.gif?raw=true"/>
 
 ## FUTURE RESEARCH <a id = 'future'></a>
 
