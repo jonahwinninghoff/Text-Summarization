@@ -84,6 +84,16 @@ Target variables:
 
 ## ACTIONABLE INSIGHTS <a id ='insights'></a>
 
+<p align = 'justify'>After the data is collected, this information is assessed with statistical inference and descriptive. Before the actionable insight begins to discuss, the part is important to mention. Being analyzed models with three different metrics, the Bonferroni correction is applied. This correction is in use to prevent Type I error albeit being conservative. This correction is prone to have the Type II error (the null hypothesis is failed to reject when false), which can be concerned in general. But on another hand, this research is more interested in whether not or Big Bird model does outperform XLNET at the significance level in every metrics. This research attempts to address three different questions in order, as the following:</p>
+
+<ul>
+  <li><p align = 'justify'> Does the Big Bird model outperform XLNET model on predicted summary term?</p></li>
+  <li><p align = 'justify'> Being compared with XLNET model, what is speed of each predicted summary that Big Bird produce?</p></li>
+  <li><p align = 'justify'> Does the Big Bird successfully reduce this quadratic dependency to linear dependency in sequence term?</p></li>
+<ul>
+  
+<p align = 'justify'>As indicated by above, the black color (or “0”) represents the XLNET model while the second color (or “1”) represents the Big Bird model. The confidence interval is 95% with Bonferroni correction, which is wider than without this correction. Average ROUGE-1 for Big Bird and XLNET is 57.65% with 4.66% margin of error and 25.66% with 2.27% margin of error, respectively, while average ROUGE-2 is 48.64% with 5.67% margin of error and 5.57% with 0.93% margin of error. Average ROUGE-L is 52.78% with 5.02% margin of error and 14.46% with 1.01% margin of error. In short, the Big Bird model does outperform the XLNET model at the significance level. However, using this model to predict the summary with CPU 1.6 GHZ is 25.8 minutes by median (26.6 minutes by mean). In other words, this model processor is slightly slower than average reading speed. The average reading speed is 200 words per minute (Rayner et al., 2010). In other words, this model is not well-scalable.</p>
+  
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/rouges.png?raw=true'/></div>
 
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/timer.png?raw=true'/></div>
