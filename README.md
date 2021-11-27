@@ -8,7 +8,7 @@
 
 ## OVERVIEW <a id='overview'></a>
 
-<p align = 'justify'> For this research, two text summarizations are compared using a specific metrics and a timer. Two text summarizations outlined in this research are the Big Bird and XLNET. The set of metrics applied to the comparison is Recall-Oriented Understudy for Gisting Evaluation (ROUGE). The timer with CPU 1.6 GHZ is included to assess the algorithmic efficiency. Both algorithms are transferred learnings. Transformers are known for solving various Natural Language Processing (NLP) tasks such as text generation and chatbot. What leads to this question is a fundamental question to ask. The Google Research team attempts to develop a different approach to address the inherent self-attention mechanism problem in Transformers models called the block sparsity. This research team uses a mathematical assessment to demonstrate the block sparsity that helps reduce this quadratic dependency to linear (in relationship of the number of tokens and memory or time) (Zaheer et al., ), which is skeptical.</p>
+<p align = 'justify'> For this research, two text summarizations are compared using a specific metrics and a timer. Two text summarizations outlined in this research are the Big Bird and XLNET. The set of metrics applied to the comparison is Recall-Oriented Understudy for Gisting Evaluation (ROUGE). The timer with CPU 1.6 GHZ is included to assess the algorithmic efficiency. Both algorithms are transferred learnings. Transformers are known for solving various Natural Language Processing (NLP) tasks such as text generation and chatbot. What leads to this question is a fundamental question to ask. The Google Research team attempts to develop a different approach to address the inherent self-attention mechanism problem in Transformers models called the block sparsity. This research team uses a mathematical assessment to demonstrate the block sparsity that helps reduce this quadratic dependency to linear (in relationship of the number of tokens and memory or time) (Zaheer et al., 2020), which is skeptical.</p>
 
 ## KEY FINDINGS <a id = 'findings'></a>
 
@@ -19,9 +19,11 @@
   <li><p align = 'justify'>On another hand, the evidence shows that the Big Bird model reduces quadratic dependency to linear against my hypothesis.</p></li>
 </ul>
 
-## TRANSFORMERS <a id='transformers'></a>
+## TRANSFORMERS ARCHITECTURE <a id='transformers'></a>
 
 <img src='https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Transformers%20Architecture.png?raw=true'/>
+
+<p align = 'justify'>To understand what is the result of quadratic dependency is required to assess the Transformers architecture and its history. Before the Transformers architecture establishes, the long short-term memory (LSTM) and gated recurrent neural networks consider to be a state-of-the-art approaches in addressing NLP problems. The significant constraint in this model is sequential computation, so the attention mechanisms help remove this constraint.  </p>
 
 ## BIG BIRD <a id ='bigbird'></a>
 
