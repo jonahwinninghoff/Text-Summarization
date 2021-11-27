@@ -86,6 +86,8 @@ Target variables:
 
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/rouges.png?raw=true'/></div>
 
+<div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/timer.png?raw=true'/></div>
+
 <div align = 'center'><img src = "https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/comparing.gif?raw=true"/></div>
 
 ## FUTURE RESEARCH <a id = 'future'></a>
