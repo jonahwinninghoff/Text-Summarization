@@ -23,7 +23,7 @@
 
 <p align = 'justify'>To understand what the result of quadratic dependency is, Transformers architecture and its history needs to be addressed first. Before the Transformers architecture is established, the long short-term memory (LSTM) and gated recurrent neural networks are considered as the state-of-the-art approaches in addressing NLP problems. The significant constraint in this model is sequential computation, so the attention mechanisms help to remove the constraint. As a result, the architecture proves to be a milestone in the NLP area throughout the years. </p>
 
-<img src='https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Transformers%20Architecture.png?raw=true'/>
+<img src='https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Transformers%20Architecture.png?raw=true'/>(Vaswani et al., 2017)
 
 <p align = 'justify'>As indicated by above, the architecture consists of two multi-layered parts, which are encoder and decoder. Both processings absorb word embeddings processed by word2vec. The difference between encoder and decoder is relatively straightforward. The representation of encoder is X (x<sub>1</sub>, ..., x<sub>n</sub>) while the representation of decoder is Z (z<sub>1</sub>, ..., z<sub>n</sub>). In this case, the representation of encoder is word embedding of unsummarized text. The representation of decoder is word embedding of the actual summarized text.</p>
 
@@ -47,7 +47,7 @@
 
 <p align = 'justify'>Using the random connection is a concern due to the lack of algorithmic intentions. Having intention in the algorithm is important in order to ensure that the model performs well. On another hand, the Google Research team seems to develop the algorithm based on Central Limit Theorem (CLT) and Law of Large Number (LLN). In other words, their assumption is that the predicted summary becomes consistent when being converged based on the length of sequence. There is an alternative suggestion that may remedy this type of connection, which will be discussed after the model assessment completion.</p>
 
-<img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/bird%20view.png?raw=true'/>
+<img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/bird%20view.png?raw=true'/>(Gupta, 2021)
 
 <p align = 'justify'>As seen by above, each color is associated with global, sliding, and random connections while each white slot represents no connection. For example, there is no connection between "work" and "is." This approach reduces time complexity, which comes with the price of no theoretical guarantees as the Google Research acknowledges (Zaheer et al., 2020).</p>
 
