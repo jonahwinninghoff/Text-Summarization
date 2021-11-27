@@ -27,13 +27,13 @@
 
 <p align = 'justify'>As indicated by above, this architecture consists of two multi-layered parts, which are encoder and decoder. Both processings absorb word embeddings processed by word2vec. The difference between encoder and decoder is relatively straightforward. The representation of encoder is X (x<sub>1</sub>, ..., x<sub>n</sub>) while the representation of decoder is Z (z<sub>1</sub>, ..., z<sub>n</sub>). In this case, the representation of encoder is word embedding of unsummarized text while the representation of decoder is that of actual summarized text.</p>
 
-<p align = 'justify'>The self-attention is associated with <i>head<sub>i</sub></i>, which is associated with <i>multi-head attention</i> as seen by above and below. The self-attention contains a matrix of a set of queries multiplied by transposed key divided by a root square of key dimensionality in softmax function multiplied by values. The softmax is a generalized version of logistic function. The values can be considered as weight that can be updated in a light of new information. This self-attention is built on matrix multiplicaiton code in order to be more space-efficient and faster (Vaswani et al., 2020). </p>
+<p align = 'justify'>The self-attention is associated with <i>head<sub>i</sub></i>, which is associated with <i>multi-head attention</i> as seen by above and below. The self-attention contains a matrix of a set of queries multiplied by transposed key divided by a root square of key dimensionality in softmax function multiplied by values. The softmax is a generalized version of logistic function. The values can be considered as weight that can be updated in a light of new information. This self-attention is built on matrix multiplicaiton code in order to be more space-efficient and faster.</p>
 
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Attention-formula.png?raw=true'/>
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/head_i.png?raw=true'/>
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/multi-head-attention.png?raw=true'/>
 
-<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2020).</p>
+<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on graph theory, the problem is that the attention mechansim has quadratic dependency due to fully connected graph (Zaheer et al., 2020). This is known to be <i>sparsification problem</i>.</p>
 
 ## BIG BIRD <a id ='bigbird'></a>
 
