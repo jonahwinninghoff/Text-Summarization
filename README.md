@@ -33,7 +33,7 @@
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/head_i.png?raw=true'/>
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/multi-head-attention.png?raw=true'/>
 
-<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on the graph theory, the problem is that the attention mechansim has quadratic dependency due to the fully connected graph. This is known to be <i>sparsification problem</i> (Zaheer et al., 2020). For this research, the XLNET is used to compare with Big Bird. Even though the change in this model is to use maximum log likelihood of the sequence with respect to permutation, the fundamental of the model remains the same (Yang et al., 2020). </p>
+<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on the graph theory, the problem is that the attention mechansim has quadratic dependency due to the fully connected graph. This is known to be <i>sparsification problem</i> (Zaheer et al., 2020). For this research, the XLNET is used to compare with Big Bird. Even though the change in this model is to use maximum log likelihood of the sequence with respects to permutation, the fundamental of the model remains the same (Yang et al., 2020). </p>
 
 ## BIG BIRD <a id ='bigbird'></a>
 
