@@ -98,9 +98,13 @@ Target variables:
 
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/timer.png?raw=true'/></div>
 
-<p align = 'justify'>There is no evidence of time being overlapped between Big Bird and XLNET models. For this reason, the violin plot is in use. As indicated by above, XLNET is much faster than Big Bird. Both distributions are leptokurtic and right-skewed on memory term or time. However, Big Bird model has higher right-skewed and kurtotic score than XLNET model. This is the reason why there is a skepticism with Big Bird algorithmic efficiency. When the loess is applied, the result is surprised. Before the discussion goes further, the reason for using loess needs to explain. The advantage of this tool is non-parametric and it helps to understand the relationship between time and word counts.</p>
+<p align = 'justify'>There is no evidence of time being overlapped between Big Bird and XLNET models. For this reason, the violin plot is in use. As indicated by above, XLNET is much faster than Big Bird. Both distributions are leptokurtic and right-skewed on memory term or time. However, Big Bird model has higher right-skewed and kurtotic score than XLNET model. This is the reason why there is a skeptics with Big Bird algorithmic efficiency. When the loess is applied, the result is surprised. Before the discussion goes further, the reason for using loess needs to explain. The advantage of this tool is non-parametric, so this tool helps to focus on relationship between time and word counts with minimal assumptions.
+</p>
 
 <div align = 'center'><img src = "https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/comparing.gif?raw=true"/></div>
+
+<p align = 'center'>There are two sliders with two different plots. The first slider is time per predicted summary while the second slider is with logarithm. In order to mitigate outlier problem. The outliers may have significant impact on loess regression. But both sliders make same confirmation that Big Bird algorithm successfully establish linear relationship between number of tokens and time per predicted summary, which is surprised. The Big Bird algorithm turns out successful in text summarization area.</p>
+
 
 ## FUTURE RESEARCH <a id = 'future'></a>
 
