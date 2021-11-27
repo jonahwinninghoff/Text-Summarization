@@ -98,6 +98,8 @@ Target variables:
 
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/timer.png?raw=true'/></div>
 
+<p align = 'justify'>There is no evidence of time being overlapped between Big Bird and XLNET models. For this reason, the violin plot is in use. As indicated by above, XLNET is much faster than Big Bird. Both distributions are leptokurtic and right-skewed on memory term or time. However, Big Bird model has higher right-skewed and kurtotic score than XLNET model. This is the reason why there is a skeptics with Big Bird algorithmic efficiency. When the loess is applied, the result is surprised. Before the discussion goes further, the reason for using loess needs to explain. The advantage of this tool is non-parametric and it helps to understand the relationship between time and word counts.</p>
+
 <div align = 'center'><img src = "https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/comparing.gif?raw=true"/></div>
 
 ## FUTURE RESEARCH <a id = 'future'></a>
