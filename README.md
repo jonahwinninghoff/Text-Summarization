@@ -49,8 +49,15 @@
 
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/bird%20view.png?raw=true'/>
 
+<p align = 'justify'>As seen by above, each color associate with global, sliding, and random connections while each white slot represents no connection. For example, there is no connection between "work" and "is." This approach that helps reduce time complexity comes with price of no theoretical guarantees as the Google Research acknowledges (Zaheer et al., 2020).</p>
+
 ## METHOD <a id ='method'></a> 
-""
+<ul>
+  <li><p align = 'justify'> As indicated by Randomized Controlled Trial analysis, the Big Bird model performance is significantly higher than XLNET at Bonferroni correction level. </p></li>
+  <li><p align = 'justify'>However, XLNET outperforms Big Bird model in memory efficiency based on producing text prediction per article text.</p></li>
+  <li><p align = 'justify'>There is evidence that the model produces some redundancies produced by Big Bird text summarization.</p></li>
+  <li><p align = 'justify'>On another hand, the evidence shows that the Big Bird model reduces quadratic dependency to linear against my hypothesis.</p></li>
+</ul>
 
 ## DATASET <a id ='dataset'></a>
 ""
