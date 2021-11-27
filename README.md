@@ -33,7 +33,7 @@
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/head_i.png?raw=true'/>
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/multi-head-attention.png?raw=true'/>
 
-<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on graph theory, the problem is that the attention mechansim has quadratic dependency due to fully connected graph (Zaheer et al., 2020). This is known to be <i>sparsification problem</i>.</p>
+<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on graph theory, the problem is that the attention mechansim has quadratic dependency due to fully connected graph (Zaheer et al., 2020). This is known to be <i>sparsification problem</i>(Zaheer et al., 2020).</p>
 
 ## BIG BIRD <a id ='bigbird'></a>
 
