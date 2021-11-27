@@ -47,6 +47,8 @@
 
 <p align = 'justify'>Using the random connection is a concern due to lack of algorithmic intention. Having intention in algorithm is important in order to ensure that model performs well. But on another hand, the Google Research team develops this algorithm based on Central Limit Theorem (CLT) and Law of Large Number (LLN). In other words, their assumption is that the predicted summary becomes consistent when being converged based on length of sequence. There is alternative suggestion that may remedy this type of connection, which will discuss after the model assessment completes.</p>
 
+<img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/bird%20view.png?raw=true'/>
+
 ## METHOD <a id ='method'></a> 
 ""
 
