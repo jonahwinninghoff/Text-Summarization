@@ -64,7 +64,7 @@
 
 ## ACTIONABLE INSIGHTS <a id ='insights'></a>
 
-<iframe src="https://giphy.com/embed/RVRWYIjHhZiXXcYCeC" width="480" height="248" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img src="https://giphy.com/embed/RVRWYIjHhZiXXcYCeC" width="480" height="248"/>
 
 ## FUTURE RESEARCH <a id = 'future'></a>
 
