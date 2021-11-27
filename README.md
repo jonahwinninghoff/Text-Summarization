@@ -53,7 +53,7 @@
 
 ## METHOD <a id ='method'></a> 
 
-<p align = 'justify'>In order to conduct experiment on both text summarizations, there are two approaches that will be used: partial NLP data science and Randomized Controlled Trials (RCTs). The partial NLP data science is a life cycle pipeline that only includes literature review, data quality assessment, data cleanup, exploratory analysis, and feature engineering. This cycle does not include predictive modeling. As mentioned earlier, Big Bird and XLNET both are Transfer Learnings. The next part is RCTs, which randomly sample the ArXiv journals to summarize using these pre-trained models and undertakes statistical inferences. This analysis contains features and target variables, as the following:</p>
+<p align = 'justify'>In order to conduct experiment on both text summarizations, there are two approaches that will be used: partial NLP data science and Randomized Controlled Trials (RCTs). The partial NLP data science is a life cycle pipeline that only includes literature review, data quality assessment, data cleanup, exploratory analysis, and feature engineering. This cycle does not include predictive modeling. As mentioned earlier, Big Bird and XLNET both are Transfer Learnings. The next part is RCTs, which randomly sample the ArXiv journals to summarize using these pre-trained models and undertake statistical inferences. This analysis contains features and target variables, as the following:</p>
 
 Features:
 
