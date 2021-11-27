@@ -80,7 +80,7 @@ Target variables:
 
 ## DATASET <a id ='dataset'></a>
 
-<p align = 'justify'>As mentioned earlier, the ArXiv journals are in use to infer models prepared by TensorFlow. This dataset contains three features, which are article id, article text, and actual abstract text. There are three subsets in this dataset, which are testing (6,658 entities), training (119,924 entities), and validation (6,633) sets. For this research, the validation set is in use to evaluate on both models. The Big Bird model is pre-trained with Wikipedia dataset (Zaheer et al., 2020) while XLNET model is pre-trained with several datasets other than ArXiv dataset (Yang et al., 2020), so this set is considered as an unseen dataset. However, using the entire set is infeasible and time-consuming. For this reason, the ArXiv journals are randomly sampled. The sampling size is 110 for each model.</p>
+<p align = 'justify'>As mentioned earlier, the ArXiv journals are in use to infer models prepared by TensorFlow. This dataset contains three features, which are <i>article id</i>, <i>article text</i>, and <i>actual abstract text</i>. There are three subsets in this dataset, which are testing (6,658 entities), training (119,924 entities), and validation (6,633) sets. For this research, the validation set is in use to evaluate on both models. The Big Bird model is pre-trained with Wikipedia dataset (Zaheer et al., 2020) while XLNET model is pre-trained with several datasets other than ArXiv dataset (Yang et al., 2020), so this set is considered as an unseen dataset. However, using the entire set is infeasible and time-consuming. For this reason, the ArXiv journals are randomly sampled. The sampling size is 110 for each model.</p>
 
 ## ACTIONABLE INSIGHTS <a id ='insights'></a>
 
