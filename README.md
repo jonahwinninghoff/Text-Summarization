@@ -21,7 +21,7 @@
 
 ## TRANSFORMERS <a id='transformers'></a>
 
-""
+<img src='https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Transformers%20Architecture.png?raw=true'/>
 
 ## BIG BIRD <a id ='bigbird'></a>
 
