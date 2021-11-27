@@ -49,7 +49,7 @@
 
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/bird%20view.png?raw=true'/>
 
-<p align = 'justify'>As seen by above, each color is associated with global, sliding, and random connections while each white slot represents no connection. For example, there is no connection between "work" and "is." This approach helps reduce time complexity comes with the price of no theoretical guarantees as the Google Research acknowledges (Zaheer et al., 2020).</p>
+<p align = 'justify'>As seen by above, each color is associated with global, sliding, and random connections while each white slot represents no connection. For example, there is no connection between "work" and "is." This approach reduces time complexity, which comes with the price of no theoretical guarantees as the Google Research acknowledges (Zaheer et al., 2020).</p>
 
 ## METHOD <a id ='method'></a> 
 <ul>
