@@ -21,9 +21,13 @@
 
 ## TRANSFORMERS ARCHITECTURE <a id='transformers'></a>
 
+<p align = 'justify'>To understand what is the result of quadratic dependency is required to assess the Transformers architecture and its history. Before the Transformers architecture establishes, the long short-term memory (LSTM) and gated recurrent neural networks consider to be a state-of-the-art approaches in addressing NLP problems. The significant constraint in this model is sequential computation, so the attention mechanisms help remove this constraint (Vaswani et al., 2020). As a result, this architecture proves to be a milestone in NLP area through years. </p>
+
 <img src='https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Transformers%20Architecture.png?raw=true'/>
 
-<p align = 'justify'>To understand what is the result of quadratic dependency is required to assess the Transformers architecture and its history. Before the Transformers architecture establishes, the long short-term memory (LSTM) and gated recurrent neural networks consider to be a state-of-the-art approaches in addressing NLP problems. The significant constraint in this model is sequential computation, so the attention mechanisms help remove this constraint.  </p>
+<p align = 'justify'>As indicated by above, this architecture consists of two multi-layered parts, which are encoder and decoder. Both processings absorb word embeddings processed by word2vec. The difference between encoder and decoder is relatively straightforward. The representation of encoder is X (x<sub>1</sub>, ..., x<sub>n</sub>) while the representation of decoder is Z (z<sub>1</sub>, ..., z<sub>n</sub>). In this case, the representation of encoder is word embedding of unsummarized text while the representation of decoder is that of actual summarized text.</p>
+
+<p align = 'justify'>The self attention is associated with <i>head<sub>i</sub></i>, which is associated with <i>multi-head attention</i>. </p>
 
 ## BIG BIRD <a id ='bigbird'></a>
 
