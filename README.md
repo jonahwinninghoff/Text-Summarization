@@ -52,11 +52,28 @@
 <p align = 'justify'>As seen by above, each color is associated with global, sliding, and random connections while each white slot represents no connection. For example, there is no connection between "work" and "is." This approach reduces time complexity, which comes with the price of no theoretical guarantees as the Google Research acknowledges (Zaheer et al., 2020).</p>
 
 ## METHOD <a id ='method'></a> 
+
+<p align = 'justify'>In order to conduct experiment on both text summarizations, there are two approaches that will be used: partial NLP data science and Randomized Controlled Trials (RCTs). The partial NLP data science is a life cycle pipeline that only includes literature review, data quality assessment, data cleanup, exploratory analysis, and feature engineering. This cycle does not include predictive modeling. As mentioned earlier, Big Bird and XLNET both are Transfer Learnings. The next part is RCTs, which randomly sample the ArXiv journals to summarize using these pre-trained models and undertakes statistical inferences. This analysis contains features and target variables, as the following:</p>
+
+Features:
+
 <ul>
-  <li><p align = 'justify'> As indicated by Randomized Controlled Trial analysis, the Big Bird model performance is significantly higher than XLNET at Bonferroni correction level. </p></li>
-  <li><p align = 'justify'>However, XLNET outperforms Big Bird model in memory efficiency based on producing text prediction per article text.</p></li>
-  <li><p align = 'justify'>There is evidence that the model produces some redundancies produced by Big Bird text summarization.</p></li>
-  <li><p align = 'justify'>On another hand, the evidence shows that the Big Bird model reduces quadratic dependency to linear against my hypothesis.</p></li>
+  <li><i>article id</i></li>
+  <li><i>article text</i></li>
+  <li><i>actual abstract text</i></li>
+  <li><i>predicted summary</i></li>
+  <li><i>article word counts</i></li>
+  <li><i>abstract word counts</i></li>
+  <li><i>predicted summary word counts</i></li>
+  <li><i>big bird (binary category)</i></li>
+</ul>
+
+Target variables:
+<ul>
+  <li><i>time per predicted summary (in seconds)</i></li>
+  <li><i>rouge 1 F1 score</i></li>
+  <li><i>rouge 2 F1 score</i></li>
+  <li><i>rouge L F1 score</i></li>
 </ul>
 
 ## DATASET <a id ='dataset'></a>
