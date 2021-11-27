@@ -76,6 +76,8 @@ Target variables:
   <li><i>rouge L F1 score</i></li>
 </ul>
 
+<p align = 'justify'>The ROUGE-N F1-score is a measure of model accuracy based on the number of matching n-grams between predicted summary and ground-truth summary. For example, ROUGE-1 measures the number of matching unigram while the ROUGE-2 measures bigram. But the ROUGE-L is slightly different. This metric measures the longest common subsequence (LCS) between predicted summary and ground-truth summary. The LCS refers to maximum length of tokens in total.</p>
+
 ## DATASET <a id ='dataset'></a>
 ""
 
