@@ -90,9 +90,9 @@ Target variables:
   <li><p align = 'justify'> Does the Big Bird model outperform XLNET model on predicted summary term?</p></li>
   <li><p align = 'justify'> Being compared with XLNET model, what is speed of each predicted summary that Big Bird produce?</p></li>
   <li><p align = 'justify'> Does the Big Bird successfully reduce this quadratic dependency to linear dependency in sequence term?</p></li>
-<ul>
+</ul>
   
-<p align = 'justify'>As indicated by above, the black color (or “0”) represents the XLNET model while the second color (or “1”) represents the Big Bird model. The confidence interval is 95% with Bonferroni correction, which is wider than without this correction. Average ROUGE-1 for Big Bird and XLNET is 57.65% with 4.66% margin of error and 25.66% with 2.27% margin of error, respectively, while average ROUGE-2 is 48.64% with 5.67% margin of error and 5.57% with 0.93% margin of error. Average ROUGE-L is 52.78% with 5.02% margin of error and 14.46% with 1.01% margin of error. In short, the Big Bird model does outperform the XLNET model at the significance level. However, using this model to predict the summary with CPU 1.6 GHZ is 25.8 minutes by median (26.6 minutes by mean). In other words, this model processor is slightly slower than average reading speed. The average reading speed is 200 words per minute (Rayner et al., 2010). In other words, this model is not well-scalable.</p>
+<p align = 'justify'> As indicated by above, the black color (or “0”) represents the XLNET model while the second color (or “1”) represents the Big Bird model. The confidence interval is 95% with Bonferroni correction, which is wider than without this correction. Average ROUGE-1 for Big Bird and XLNET is 57.65% with 4.66% margin of error and 25.66% with 2.27% margin of error, respectively, while average ROUGE-2 is 48.64% with 5.67% margin of error and 5.57% with 0.93% margin of error. Average ROUGE-L is 52.78% with 5.02% margin of error and 14.46% with 1.01% margin of error. In short, the Big Bird model does outperform the XLNET model at the significance level. However, using this model to predict the summary with CPU 1.6 GHZ is 25.8 minutes by median (26.6 minutes by mean). In other words, this model processor is slightly slower than average reading speed. The average reading speed is 200 words per minute (Rayner et al., 2010). In other words, this model is not well-scalable.</p>
   
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/rouges.png?raw=true'/></div>
 
@@ -112,5 +112,7 @@ Target variables:
 https://papers.nips.cc/paper/2020/file/c8512d142a2d849725f31a9a7a361ab9-Paper.pdf
 https://arxiv.org/pdf/1904.10509.pdf
 https://arxiv.org/pdf/1906.08237v2.pdf
+https://pubmed.ncbi.nlm.nih.gov/21169577/
+
 
 
