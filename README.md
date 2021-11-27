@@ -103,7 +103,7 @@ Target variables:
 
 <div align = 'center'><img src = "https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/comparing.gif?raw=true"/></div>
 
-<p align = 'justify'>There are two sliders with two different plots. The first slider is time per predicted summary while the second slider is with logarithm. In order to mitigate outlier problem. The outliers may have significant impact on loess regression. But both sliders make same confirmation that Big Bird algorithm successfully establish linear relationship between number of tokens and time per predicted summary, which is surprised. The Big Bird algorithm turns out successful in text summarization area.</p>
+<p align = 'justify'>There are two sliders with two different plots. The first slider is time per predicted summary while the second slider is with logarithm. To mitigate outlier problem, the logarithm is in use. The outliers may have significant impact on loess regression. But both sliders make same confirmation that Big Bird algorithm successfully establish linear relationship between number of tokens and time per predicted summary, which is surprised. The Big Bird algorithm turns out successful in text summarization area.</p>
 
 
 ## FUTURE RESEARCH <a id = 'future'></a>
