@@ -31,7 +31,7 @@ limits <- aes(ymax = upper_ci, ymin = lower_ci)
 dodge <- position_dodge(width = 0.9)
 
 
-jpeg('myplot.jpeg',width = 600, height = 600)
+jpeg('myplot.jpeg',width = 1000, height = 1000)
 ggplot(result, aes(fill=`Big Bird`, y=mean, x=metric)) + 
   geom_bar(position=dodge, stat="identity", color = 'black')+
   geom_errorbar(limits, position = dodge, width = 0.25)+
@@ -41,11 +41,11 @@ ggplot(result, aes(fill=`Big Bird`, y=mean, x=metric)) +
         panel.grid.minor = element_line(color = '#ffd966'),
         panel.grid.major = element_line(color = '#ffd966'),
         plot.background = element_rect(fill = '#ffd966'),
-        axis.title.y = element_text(vjust = .5, color='black',size=12),
+        axis.title.y = element_text(vjust = .5, color='black',size=20),
         legend.position="right",
-        legend.text = element_text(color='black', size=12),
+        legend.text = element_text(color='black', size=16),
         legend.background = element_rect(fill = '#ffd966'),
-        axis.text = element_text(colour = 'black',size=12))+
+        axis.text = element_text(colour = 'black',size=20))+
   ylab('Average metric (95% CI with Bonferroni correction)')+
   xlab('')
 dev.off()
@@ -62,15 +62,15 @@ forviolin <- df%>%select(time.in.seconds, block.sparsity)
 forviolin$block.sparsity <- ifelse(forviolin$block.sparsity == 1,"Big Bird", 
   "Transformers (XLNET)")
 
-jpeg('myplot1.jpeg',width = 600, height = 600)
+jpeg('myplot1.jpeg',width = 1000, height = 1000)
 ggplot(forviolin, aes(block.sparsity, time.in.seconds))+
   geom_violin(fill = 'black')+
   theme(panel.background = element_rect(fill = '#ffd966'),
         panel.grid.minor = element_line(color = '#ffd966'),
         panel.grid.major = element_line(color = '#ffd966'),
         plot.background = element_rect(fill = '#ffd966'),
-        axis.title.y = element_text(vjust = .5, color='black',size=12),
-        axis.text = element_text(colour = 'black',size=12),
+        axis.title.y = element_text(vjust = .5, color='black',size=20),
+        axis.text = element_text(colour = 'black',size=20),
         axis.line.y = element_line(colour = 'black', size=0.5, linetype='solid'),
         axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))+
   ylab('Time per text summarization prediction (in seconds)')+
@@ -82,7 +82,7 @@ bigbird <- df%>%select(article.word.counts,time.in.seconds,
   block.sparsity)%>%filter(block.sparsity == 1)
 
 
-jpeg('myplot2.jpeg',width = 600, height = 600)
+jpeg('myplot2.jpeg',width = 1000, height = 1000)
 ggplot(bigbird,aes(x = article.word.counts, y = time.in.seconds))+
   geom_point()+
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95,
@@ -91,19 +91,39 @@ ggplot(bigbird,aes(x = article.word.counts, y = time.in.seconds))+
         panel.grid.minor = element_line(color = '#ffd966'),
         panel.grid.major = element_line(color = '#ffd966'),
         plot.background = element_rect(fill = '#ffd966'),
-        axis.text = element_text(colour = 'black',size=12),
+        axis.text = element_text(colour = 'black',size=20),
         axis.line.y = element_line(colour = 'black', size=0.5, linetype='solid'),
         axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'),
-        plot.title = element_text(hjust = 0.5,size = 16))+
+        plot.title = element_text(hjust = 0.5,size = 20),
+        axis.title = element_text(size = 20))+
   xlab('Word counts (in article text)')+
   ylab('Time per text summarization prediction (in seconds)')+
+  ggtitle('Big Bird')
+dev.off()
+
+jpeg('myplot3.jpeg',width = 1000, height = 1000)
+ggplot(bigbird,aes(x = article.word.counts, y = log(time.in.seconds)))+
+  geom_point()+
+  geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95,
+              color = 'black', fill = 'black')+
+  theme(panel.background = element_rect(fill = '#ffd966'),
+        panel.grid.minor = element_line(color = '#ffd966'),
+        panel.grid.major = element_line(color = '#ffd966'),
+        plot.background = element_rect(fill = '#ffd966'),
+        axis.text = element_text(colour = 'black',size=16),
+        axis.line.y = element_line(colour = 'black', size=0.5, linetype='solid'),
+        axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'),
+        plot.title = element_text(hjust = 0.5,size = 20),
+        axis.title = element_text(size = 20))+
+  xlab('Word counts (in article text)')+
+  ylab('Logarithmic time per text summarization prediction (in seconds)')+
   ggtitle('Big Bird')
 dev.off()
 
 notbigbird <- df%>%select(article.word.counts,time.in.seconds,
                        block.sparsity)%>%filter(block.sparsity == 0)
 
-jpeg('myplot3.jpeg',width = 600, height = 600)
+jpeg('myplot4.jpeg',width = 1000, height = 1000)
 ggplot(notbigbird,aes(x = article.word.counts, y = time.in.seconds))+
   geom_point()+
   geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95, 
@@ -112,12 +132,32 @@ ggplot(notbigbird,aes(x = article.word.counts, y = time.in.seconds))+
         panel.grid.minor = element_line(color = '#ffd966'),
         panel.grid.major = element_line(color = '#ffd966'),
         plot.background = element_rect(fill = '#ffd966'),
-        axis.text = element_text(colour = 'black',size=12),
+        axis.text = element_text(colour = 'black',size=16),
         axis.line.y = element_line(colour = 'black', size=0.5, linetype='solid'),
         axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'),
-        plot.title = element_text(hjust = 0.5,size = 16))+
+        plot.title = element_text(hjust = 0.5,size = 20),
+        axis.title = element_text(size = 20))+
   xlab('Word counts (in article text)')+
   ylab('Time per text summarization prediction (in seconds)')+
+  ggtitle('Transformers (XLNET)')
+dev.off()
+
+jpeg('myplot5.jpeg',width = 1000, height = 1000)
+ggplot(notbigbird,aes(x = article.word.counts, y = log(time.in.seconds)))+
+  geom_point()+
+  geom_smooth(method="auto", se=TRUE, fullrange=FALSE, level=0.95, 
+              color = 'black', fill = 'black')+
+  theme(panel.background = element_rect(fill = '#ffd966'),
+        panel.grid.minor = element_line(color = '#ffd966'),
+        panel.grid.major = element_line(color = '#ffd966'),
+        plot.background = element_rect(fill = '#ffd966'),
+        axis.text = element_text(colour = 'black',size=16),
+        axis.line.y = element_line(colour = 'black', size=0.5, linetype='solid'),
+        axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'),
+        plot.title = element_text(hjust = 0.5,size = 20),
+        axis.title = element_text(size = 20))+
+  xlab('Word counts (in article text)')+
+  ylab('Logarithmic time per text summarization prediction (in seconds)')+
   ggtitle('Transformers (XLNET)')
 dev.off()
 
