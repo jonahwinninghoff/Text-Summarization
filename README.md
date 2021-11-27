@@ -21,7 +21,7 @@
 
 ## TRANSFORMERS ARCHITECTURE <a id='transformers'></a>
 
-<p align = 'justify'>To understand what is the result of quadratic dependency is required to assess the Transformers architecture and its history. Before the Transformers architecture establishes, the long short-term memory (LSTM) and gated recurrent neural networks consider to be a state-of-the-art approaches in addressing NLP problems. The significant constraint in this model is sequential computation, so the attention mechanisms help remove this constraint. As a result, this architecture proves to be a milestone in NLP area through years. </p>
+<p align = 'justify'>To understand what is the result of quadratic dependency is required to assess the Transformers architecture and its history. Before the Transformers architecture establishes, the long short-term memory (LSTM) and gated recurrent neural networks consider to be the state-of-the-art approaches in addressing NLP problems. The significant constraint in this model is sequential computation, so the attention mechanisms help remove this constraint. As a result, this architecture proves to be a milestone in NLP area through years. </p>
 
 <img src='https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Transformers%20Architecture.png?raw=true'/>
 
