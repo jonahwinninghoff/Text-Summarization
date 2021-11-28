@@ -4,6 +4,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+See the presentation ([PPT](https://github.com/jonahwinninghoff/Text-Summarization/raw/main/Presentation/BigBird.pptx) or [PDF](https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Presentation/BigBird.pdf))
+
 **[Overview](#overview)** | **[Findings](#findings)** | **[Transformers](#transformers)** | **[Big Bird](#bigbird)** | **[Method](#method)** | **[Dataset](#dataset)** | **[Insights](#insights)** | **[Future](#future)** | **[Conclusion](#concluding)** | **[References](#refer)**
 
 ## OVERVIEW <a id='overview'></a>
