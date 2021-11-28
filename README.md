@@ -1,4 +1,4 @@
-# Text-Summarization
+# Comparing Performance and Accuracy of Big Bird and XLNet for Longer Sequence
 
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
@@ -8,13 +8,13 @@
 
 ## OVERVIEW <a id='overview'></a>
 
-<p align = 'justify'> For this research, two text summarizations are compared using specific metrics and a timer. Two text summarizations outlined in this research are the Big Bird and XLNET. The set of metrics applied to the comparison is Recall-Oriented Understudy for Gisting Evaluation (ROUGE). The timer with CPU 1.6 GHZ is included to assess the algorithmic efficiency. Both algorithms are Transfer Learnings. Transformers are known for solving various Natural Language Processing (NLP) tasks such as text generation. What leads to this research is a fundamental question to ask. The Google Research team attempts to develop a different approach to address the inherent self-attention mechanism problem in Transformers models called the block sparsity. The research team uses a mathematical assessment to demonstrate the block sparsity that reduces the quadratic dependency to the linear dependency (in relationship of the number of tokens and memory or time) (Zaheer et al., 2020), which is skeptical.</p>
+<p align = 'justify'> For this research, two text summarizations are compared using specific metrics and a timer. Two text summarizations outlined in this research are the Big Bird and XLNet. The set of metrics applied to the comparison is Recall-Oriented Understudy for Gisting Evaluation (ROUGE). The timer with CPU 1.6 GHZ is included to assess the algorithmic efficiency. Both algorithms are Transfer Learnings. Transformers are known for solving various Natural Language Processing (NLP) tasks such as text generation. What leads to this research is a fundamental question to ask. The Google Research team attempts to develop a different approach to address the inherent self-attention mechanism problem in Transformers models called the block sparsity. The research team uses a mathematical assessment to demonstrate the block sparsity that reduces the quadratic dependency to the linear dependency (in relationship of the number of tokens and memory or time) (Zaheer et al., 2020), which is skeptical.</p>
 
 ## KEY FINDINGS <a id = 'findings'></a>
 
 <ul>
-  <li><p align = 'justify'> As indicated by Randomized Controlled Trial analysis, the Big Bird model performance is significantly higher than XLNET at Bonferroni correction level. </p></li>
-  <li><p align = 'justify'>However, XLNET outperforms Big Bird model in memory efficiency based on producing text prediction per article text.</p></li>
+  <li><p align = 'justify'> As indicated by Randomized Controlled Trial analysis, the Big Bird model performance is significantly higher than XLNet at Bonferroni correction level. </p></li>
+  <li><p align = 'justify'>However, XLNet outperforms Big Bird model in memory efficiency based on producing text prediction per article text.</p></li>
   <li><p align = 'justify'>There is evidence that the model produces some redundancies produced by Big Bird text summarization.</p></li>
   <li><p align = 'justify'>Other evidence shows that the Big Bird model reduces quadratic dependency to linear dependency which is against my hypothesis.</p></li>
 </ul>
@@ -36,7 +36,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=MultiHead(Q,K,V) = Concat(head_i,...,head_h)W^0"/>
 
 
-<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on the graph theory, the problem is that the attention mechansim has quadratic dependency due to the fully connected graph. This is known to be <i>sparsification problem</i> (Zaheer et al., 2020). For this research, the XLNET is used to compare with Big Bird. Even though the change in this model is to use maximum log likelihood of the sequence with respects to permutation, the fundamental of the model remains the same (Yang et al., 2020). </p>
+<p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on the graph theory, the problem is that the attention mechansim has quadratic dependency due to the fully connected graph. This is known to be <i>sparsification problem</i> (Zaheer et al., 2020). For this research, the XLNet is used to compare with Big Bird. Even though the change in this model is to use maximum log likelihood of the sequence with respects to permutation, the fundamental of the model remains the same (Yang et al., 2020). </p>
 
 ## BIG BIRD <a id ='bigbird'></a>
 
@@ -56,7 +56,7 @@
 
 ## METHOD <a id ='method'></a> 
 
-<p align = 'justify'>In order to experiment on both text summarizations, there are two approaches that will be used: partial NLP data science and Randomized Controlled Trials (RCTs). The partial NLP data science is a life cycle pipeline that only includes literature review, data quality assessment, data cleanup, exploratory analysis, and feature engineering. This cycle does not include predictive modeling. As mentioned earlier, Big Bird and XLNET both are Transfer Learnings. The next part is RCTs, which randomly sample the ArXiv journals to summarize using these pre-trained models and undertake statistical inferences. This analysis contains features and target variables, such as the following:</p>
+<p align = 'justify'>In order to experiment on both text summarizations, there are two approaches that will be used: partial NLP data science and Randomized Controlled Trials (RCTs). The partial NLP data science is a life cycle pipeline that only includes literature review, data quality assessment, data cleanup, exploratory analysis, and feature engineering. This cycle does not include predictive modeling. As mentioned earlier, Big Bird and XLNet both are Transfer Learnings. The next part is RCTs, which randomly sample the ArXiv journals to summarize using these pre-trained models and undertake statistical inferences. This analysis contains features and target variables, such as the following:</p>
 
 Features:
 
@@ -83,25 +83,25 @@ Target variables:
 
 ## DATASET <a id ='dataset'></a>
 
-<p align = 'justify'>As mentioned earlier, the ArXiv journals are in use to infer models prepared by TensorFlow. This dataset contains three features, which are <i>article id</i>, <i>article text</i>, and <i>actual abstract text</i>. There are three subsets in this dataset, which are testing (6,658 entities), training (119,924 entities), and validation (6,633 entities) sets. For this research, the validation set is in use to evaluate on both models. Based on the exploratory analysis, 70.8% of tokens in article texts matches NLTK dictionaries while 62.05% in abstract text matches these dictionaries. The Big Bird model is pre-trained with Wikipedia dataset (Zaheer et al., 2020) while XLNET model is pre-trained with several datasets other than ArXiv dataset (Yang et al., 2020), so the validation set is considered as an unseen dataset. However, using the entire set is infeasible and time-consuming. For this reason, the ArXiv journals are randomly sampled. The sampling size is 110 for each model.</p>
+<p align = 'justify'>As mentioned earlier, the ArXiv journals are in use to infer models prepared by TensorFlow. This dataset contains three features, which are <i>article id</i>, <i>article text</i>, and <i>actual abstract text</i>. There are three subsets in this dataset, which are testing (6,658 entities), training (119,924 entities), and validation (6,633 entities) sets. For this research, the validation set is in use to evaluate on both models. Based on the exploratory analysis, 70.8% of tokens in article texts matches NLTK dictionaries while 62.05% in abstract text matches these dictionaries. The Big Bird model is pre-trained with Wikipedia dataset (Zaheer et al., 2020) while XLNet model is pre-trained with several datasets other than ArXiv dataset (Yang et al., 2020), so the validation set is considered as an unseen dataset. However, using the entire set is infeasible and time-consuming. For this reason, the ArXiv journals are randomly sampled. The sampling size is 110 for each model.</p>
 
 ## ACTIONABLE INSIGHTS <a id ='insights'></a>
 
-<p align = 'justify'>After the data is collected, the information is assessed with statistical inference and descriptive statistics. Before the actionable insights are discussed, one part is important to mention. Being analyzing the models with three different metrics, the Bonferroni correction is first applied. The correction is in use to prevent Type I error albeit being conservative. This correction is prone to have the Type II error (the null hypothesis is failed to reject when false), which can be concerning in general. On another hand, this research is focused on Big Bird's model performance comparing to XLENT. Big Bird model does outperform XLNET at the significance level in every metrics. This research attempts to address three different questions in order, as the following:</p>
+<p align = 'justify'>After the data is collected, the information is assessed with statistical inference and descriptive statistics. Before the actionable insights are discussed, one part is important to mention. Being analyzing the models with three different metrics, the Bonferroni correction is first applied. The correction is in use to prevent Type I error albeit being conservative. This correction is prone to have the Type II error (the null hypothesis is failed to reject when false), which can be concerning in general. On another hand, this research is focused on Big Bird's model performance comparing to XLENT. Big Bird model does outperform XLNet at the significance level in every metrics. This research attempts to address three different questions in order, as the following:</p>
 
 <ul>
-  <li><p align = 'justify'> Does the Big Bird model outperform XLNET model on predicted summary term?</p></li>
-  <li><p align = 'justify'> Being compared with XLNET model, what is speed of each predicted summary that Big Bird produce?</p></li>
+  <li><p align = 'justify'> Does the Big Bird model outperform XLNet model on predicted summary term?</p></li>
+  <li><p align = 'justify'> Being compared with XLNet model, what is speed of each predicted summary that Big Bird produce?</p></li>
   <li><p align = 'justify'> Does the Big Bird successfully reduce this quadratic dependency to linear dependency in sequence term?</p></li>
 </ul>
   
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/rouges.png?raw=true'/></div>
 
-<p align = 'justify'> As indicated by above, the black color (or “0”) represents the XLNET model while the second color (or “1”) represents the Big Bird model. The confidence interval is 95% with Bonferroni correction, which is wider than without this correction. Average ROUGE-1 for Big Bird and XLNET is 57.65% with 4.66% margin of error and 25.66% with 2.27% margin of error, respectively, while average ROUGE-2 is 48.64% with 5.67% margin of error and 5.57% with 0.93% margin of error. Average ROUGE-L is 52.78% with 5.02% margin of error and 14.46% with 1.01% margin of error. In short, the Big Bird model does outperform the XLNET model at a significance level. However, using this model to predict the summary with CPU 1.6 GHZ is 25.8 minutes by median (26.6 minutes by mean). In other words, this model processor is slightly slower than the average reading speed. The average reading speed is 200 words per minute (Rayner et al., 2010). In other words, the model is not well-scalable with local application.</p>
+<p align = 'justify'> As indicated by above, the black color (or “0”) represents the XLNet model while the second color (or “1”) represents the Big Bird model. The confidence interval is 95% with Bonferroni correction, which is wider than without this correction. Average ROUGE-1 for Big Bird and XLNet is 57.65% with 4.66% margin of error and 25.66% with 2.27% margin of error, respectively, while average ROUGE-2 is 48.64% with 5.67% margin of error and 5.57% with 0.93% margin of error. Average ROUGE-L is 52.78% with 5.02% margin of error and 14.46% with 1.01% margin of error. In short, the Big Bird model does outperform the XLNet model at a significance level. However, using this model to predict the summary with CPU 1.6 GHZ is 25.8 minutes by median (26.6 minutes by mean). In other words, this model processor is slightly slower than the average reading speed. The average reading speed is 200 words per minute (Rayner et al., 2010). In other words, the model is not well-scalable with local application.</p>
 
 <div align = 'center'><img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/timer.png?raw=true'/></div>
 
-<p align = 'justify'>There is no evidence of time overlap between Big Bird and XLNET models. For that reason, the violin plot is in use. As indicated by above, XLNET is much faster than Big Bird. Both distributions are leptokurtic and right-skewed on memory term or time. However, Big Bird model has a higher right-skewed and kurtotic score than XLNET model. That is the reason why skepticism exists on Big Bird algorithmic efficiency. When the loess is applied, the result is surprising. Before the discussion goes further, the reason for using loess needs to be explained. The advantage of the loess tool is non-parametric, so the tool helps to focus on the relationship between time and word counts with minimal assumptions.
+<p align = 'justify'>There is no evidence of time overlap between Big Bird and XLNet models. For that reason, the violin plot is in use. As indicated by above, XLNet is much faster than Big Bird. Both distributions are leptokurtic and right-skewed on memory term or time. However, Big Bird model has a higher right-skewed and kurtotic score than XLNet model. That is the reason why skepticism exists on Big Bird algorithmic efficiency. When the loess is applied, the result is surprising. Before the discussion goes further, the reason for using loess needs to be explained. The advantage of the loess tool is non-parametric, so the tool helps to focus on the relationship between time and word counts with minimal assumptions.
 </p>
 
 <div align = 'center'><img src = "https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/comparing.gif?raw=true"/></div>
@@ -120,7 +120,7 @@ Target variables:
 
 ## CONCLUSION <a id='concluding'></a>
 
-<p align = 'justify'>Both Big Bird and XLNET models are tested for performance and efficiency using local application. There is a clear trade-off between accuracy and efficiency with both algorithms. For example, the Big Bird model does better with predicting summary. This algorithm successfully linearizes self-attention mechanism using block sparsity. But using cloud environment with Big Bird model is prerequisite for efficiency. This model has scalability and redundant problem as seen in several predicted texts. For the future research, in order to determine if the novel algorithm can be improved, the AFT and Bayesian connection will be tested.</p>
+<p align = 'justify'>Both Big Bird and XLNet models are tested for performance and efficiency using local application. There is a clear trade-off between accuracy and efficiency with both algorithms. For example, the Big Bird model does better with predicting summary. This algorithm successfully linearizes self-attention mechanism using block sparsity. But using cloud environment with Big Bird model is prerequisite for efficiency. This model has scalability and redundant problem as seen in several predicted texts. For the future research, in order to determine if the novel algorithm can be improved, the AFT and Bayesian connection will be tested.</p>
 
 ## REFERENCES <a id = 'refer'></a>
 
