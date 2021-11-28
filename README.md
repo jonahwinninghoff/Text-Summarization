@@ -124,21 +124,23 @@ Target variables:
 
 ## REFERENCES <a id = 'refer'></a>
 
-
-
+<p align = 'justify'>Zaheer, M., Guruganesh, G., Dubey, A., Ainslie, J., Alberti, C., Ontanon, S., Philip, P., Ravula, A., Wang, Q., Yang, L., and Amr Ahmed, A. “Big Bird: Transformers for Longer Sequences.” Advances in Neural Information Processing Systems 33, NeurIPS, 2020.</p>
 https://papers.nips.cc/paper/2020/file/c8512d142a2d849725f31a9a7a361ab9-Paper.pdf
 
-https://arxiv.org/pdf/1904.10509.pdf
+<p align = 'justify'>Child, R., Gray, S., Radford, A., and Sutskever, I. “Generating Long Sequences with Sparse Transformers.” arXiv, 2019.</p> https://arxiv.org/pdf/1904.10509.pdf
 
-https://arxiv.org/pdf/1906.08237v2.pdf
+<p align = 'justify'>Yang, Z., Dai, Z., Yang, Y., Carbonell, J., Salakhutdinov, R., and Le., QV. “XLNet: Generalized Autoregressive Pretraining for Language Understanding.” arXiv, Jan. 2020.</p> https://arxiv.org/pdf/1906.08237v2.pdf
 
-https://pubmed.ncbi.nlm.nih.gov/21169577/
+<p align = 'justify'>Rayner, K., Slattery, TJ., and Bélanger, NN. “Eye movements, the perceptual span, and reading speed.” Psychon Bull Rev., Dec. 2010. doi: 10.3758/PBR.17.6.834</p>
 
-https://papers.labml.ai/paper/2105.14103
+<p align = 'justify'>Zhai, S., Talbott, W., Srivastava, N., Huang, C., Goh, H., Zhang, R., and Susskind, J. “An Attention Free Transformer.” arXiv, Sep. 2021. https://arxiv.org/pdf/2105.14103.pdf</p>
 
+<p align = 'justify'>Brochu, E., Cora, VM., and Freitas, N. “A Tutorial on Bayesian Optimization of Expensive Cost Functions, With Application to Active User Modeling and Hierarchical Reinforcement Learning.” arXiv, Dec. 2020.</p>
 https://www.math.umd.edu/~slud/RITF17/Tutorial_on_Bayesian_Optimization.pdf
 
+<p align = 'justify'>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, Ł., Gomez, AN., Kaiser, L., and Polosukhin, I. “Attention is All You Need.” Advances in Neural Information Processing Systems 30. NIPS, 2017.</p>
 https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
 
-https://huggingface.co/blog/big-bird
+<p align = 'justify'>Gupta, V. “Understanding BigBird’s Block Sparse Attention.” Huggingface, Mar. 2021. https://huggingface.co/blog/big-bird</p>
+
 
