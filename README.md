@@ -31,7 +31,7 @@
 
 <ul>
   <li><img src="https://render.githubusercontent.com/render/math?math=Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d_k}})V"></li>
-  <li><img src="https://render.githubusercontent.com/render/math?math= head_i = Attention(QW_i^Q,KW_i^K,VW_i^v)"></li>
+  <li><img src="https://render.githubusercontent.com/render/math?math=head_i = Attention(QW_i^Q,KW_i^K,VW_i^v)"></li>
 </ul>
 
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Attention-formula.png?raw=true'/>
