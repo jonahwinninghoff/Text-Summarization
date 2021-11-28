@@ -111,7 +111,12 @@ Target variables:
 
 ## FUTURE RESEARCH <a id = 'future'></a>
 
-""
+<p align = 'justify'>In the Big Bird algorithm, there are two issues that have been identified. The first problem is, unsurprisingly, scalability, and the second one random connection in block sparse attention. Both problems can be, for the future research, a challenge. To make this algorithm scalable, each self-attention layer in original architecture needs be replaced with Attention Free Transformer (AFT) and this algorithm needs to modify block sparse attention. In so doing, the Transformer with AFT needs to be assessed based on model performance and scalability and it needs to compare with Big Bird algorithm. The next experiment is to replace each self-attention layer with AFT while persevering block sparse attention. Another experiment is to modify block sparse attention without self-attention replacement. The final experiment is self-attention replacement with modified block sparse attention. In other words, there are five different experiments in total to determine which algorithm outperforms others.</p>
+
+<p align = 'justify'>The modified block sparse attention is by replacing random connection with Bayesian connection inspired by Bayesian optimization. This optimization consists of three functions: objective, acquisition, and surrogate functions. The objective function possesses true shape that is unobservable and can only reveal some data points, which can otherwise be expensive to compute while the surrogate function is the probabilistic model being built to exploit what is known and it can be updated in a light of new information. The acquisition function is to calculate, in this case, adjacency matrix that is likely to yield the higher local maximum of objective function using surrogate (Brochu et al., 2010).</p> 
+
+<p align = 'justify'>From now on, the future research focuses on AFT due to its advantage. In the Computer Vision area, the recent study shows that the AFT proves to be efficient with high yield result (Zhai et al., 2021). However, the AFT for text summarization is not tested in this paper. This is the reason why, in the future, scalability and block sparsity need to be evaluated with both relatively novel approaches.</p>
+
 
 ## CONCLUSION <a id='concluding'></a>
 
@@ -122,6 +127,8 @@ https://papers.nips.cc/paper/2020/file/c8512d142a2d849725f31a9a7a361ab9-Paper.pd
 https://arxiv.org/pdf/1904.10509.pdf
 https://arxiv.org/pdf/1906.08237v2.pdf
 https://pubmed.ncbi.nlm.nih.gov/21169577/
+https://papers.labml.ai/paper/2105.14103
+https://www.math.umd.edu/~slud/RITF17/Tutorial_on_Bayesian_Optimization.pdf
 
 
 
