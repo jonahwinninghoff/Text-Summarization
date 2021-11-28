@@ -124,12 +124,11 @@ Target variables:
 
 ## REFERENCES <a id = 'refer'></a>
 
-<p align = 'justify'>Zaheer, M., Guruganesh, G., Dubey, A., Ainslie, J., Alberti, C., Ontanon, S., Philip, P., Ravula, A., Wang, Q., Yang, L., and Amr Ahmed, A. “Big Bird: Transformers for Longer Sequences.” Advances in Neural Information Processing Systems 33, NeurIPS, 2020.</p>
-https://papers.nips.cc/paper/2020/file/c8512d142a2d849725f31a9a7a361ab9-Paper.pdf
+<p align = 'justify'>Zaheer, M., Guruganesh, G., Dubey, A., Ainslie, J., Alberti, C., Ontanon, S., Philip, P., Ravula, A., Wang, Q., Yang, L., and Amr Ahmed, A. “Big Bird: Transformers for Longer Sequences.” Advances in Neural Information Processing Systems 33, NeurIPS, 2020. https://papers.nips.cc/paper/2020/file/c8512d142a2d849725f31a9a7a361ab9-Paper.pdf</p>
 
-<p align = 'justify'>Child, R., Gray, S., Radford, A., and Sutskever, I. “Generating Long Sequences with Sparse Transformers.” arXiv, 2019.</p> https://arxiv.org/pdf/1904.10509.pdf
+<p align = 'justify'>Child, R., Gray, S., Radford, A., and Sutskever, I. “Generating Long Sequences with Sparse Transformers.” arXiv, 2019. https://arxiv.org/pdf/1904.10509.pdf</p>
 
-<p align = 'justify'>Yang, Z., Dai, Z., Yang, Y., Carbonell, J., Salakhutdinov, R., and Le., QV. “XLNet: Generalized Autoregressive Pretraining for Language Understanding.” arXiv, Jan. 2020.</p> https://arxiv.org/pdf/1906.08237v2.pdf
+<p align = 'justify'>Yang, Z., Dai, Z., Yang, Y., Carbonell, J., Salakhutdinov, R., and Le., QV. “XLNet: Generalized Autoregressive Pretraining for Language Understanding.” arXiv, Jan. 2020.https://arxiv.org/pdf/1906.08237v2.pdf</p>
 
 <p align = 'justify'>Rayner, K., Slattery, TJ., and Bélanger, NN. “Eye movements, the perceptual span, and reading speed.” Psychon Bull Rev., Dec. 2010. doi: 10.3758/PBR.17.6.834</p>
 
