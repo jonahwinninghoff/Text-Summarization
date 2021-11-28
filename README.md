@@ -120,7 +120,7 @@ Target variables:
 
 ## CONCLUSION <a id='concluding'></a>
 
-<p align = 'justify'>Both Big Bird and XLNET models are tested for performance and efficiency using local application. There is a clear trade-off between accuracy and efficiency with both algorithms. For example, the Big Bird model does better with predicting summary. This algorithm successfully linearizes self-attention mechanism using block sparsity. But using cloud environment with Big Bird model is prerequisite for efficiency. This model has scalability and redundant problem as seen in several predicted texts. For the future research, in order to determine if the novel algorithm can be improved, the AFT and Bayesian connection are tested.</p>
+<p align = 'justify'>Both Big Bird and XLNET models are tested for performance and efficiency using local application. There is a clear trade-off between accuracy and efficiency with both algorithms. For example, the Big Bird model does better with predicting summary. This algorithm successfully linearizes self-attention mechanism using block sparsity. But using cloud environment with Big Bird model is prerequisite for efficiency. This model has scalability and redundant problem as seen in several predicted texts. For the future research, in order to determine if the novel algorithm can be improved, the AFT and Bayesian connection will be tested.</p>
 
 ## REFERENCES <a id = 'refer'></a>
 
