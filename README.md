@@ -124,11 +124,18 @@ Target variables:
 ## REFERENCES <a id = 'refer'></a>
 
 https://papers.nips.cc/paper/2020/file/c8512d142a2d849725f31a9a7a361ab9-Paper.pdf
+
 https://arxiv.org/pdf/1904.10509.pdf
+
 https://arxiv.org/pdf/1906.08237v2.pdf
+
 https://pubmed.ncbi.nlm.nih.gov/21169577/
+
 https://papers.labml.ai/paper/2105.14103
+
 https://www.math.umd.edu/~slud/RITF17/Tutorial_on_Bayesian_Optimization.pdf
 
+https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
 
+https://huggingface.co/blog/big-bird
 
