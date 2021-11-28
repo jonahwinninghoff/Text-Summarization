@@ -29,7 +29,10 @@
 
 <p align = 'justify'>The self-attention is associated with <i>head<sub>i</sub></i>, which is associated with <i>multi-head attention</i> as seen by above and below. The self-attention contains a matrix of queries multiplied by transposed key divided by a root square of key dimensionality in softmax function multiplied by values. The softmax is a generalized version of logistic function. The values can be considered as weight that can be updated. This self-attention is built on matrix multiplicaiton code in order to be more space-efficient and faster.</p>
 
-<img src="https://render.githubusercontent.com/render/math?math=Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d_k}})V">
+<ul>
+  <li><img src="https://render.githubusercontent.com/render/math?math=Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d_k}})V"></li>
+  <li><img src="https://render.githubusercontent.com/render/math?math= head_i = Attention(QW_i^Q,KW_i^K,VW_i^v)"></li>
+</ul>
 
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/Attention-formula.png?raw=true'/>
 <img src = 'https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Images/head_i.png?raw=true'/>
