@@ -134,11 +134,11 @@ Target variables:
 
 <p align = 'justify'>Zhai, S., Talbott, W., Srivastava, N., Huang, C., Goh, H., Zhang, R., and Susskind, J. “An Attention Free Transformer.” arXiv, Sep. 2021. https://arxiv.org/pdf/2105.14103.pdf</p>
 
-<p align = 'justify'>Brochu, E., Cora, VM., and Freitas, N. “A Tutorial on Bayesian Optimization of Expensive Cost Functions, With Application to Active User Modeling and Hierarchical Reinforcement Learning.” arXiv, Dec. 2020.</p>
-https://www.math.umd.edu/~slud/RITF17/Tutorial_on_Bayesian_Optimization.pdf
+<p align = 'justify'>Brochu, E., Cora, VM., and Freitas, N. “A Tutorial on Bayesian Optimization of Expensive Cost Functions, With Application to Active User Modeling and Hierarchical Reinforcement Learning.” arXiv, Dec. 2020.
+https://www.math.umd.edu/~slud/RITF17/Tutorial_on_Bayesian_Optimization.pdf</p>
 
-<p align = 'justify'>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, Ł., Gomez, AN., Kaiser, L., and Polosukhin, I. “Attention is All You Need.” Advances in Neural Information Processing Systems 30. NIPS, 2017.</p>
-https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+<p align = 'justify'>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, Ł., Gomez, AN., Kaiser, L., and Polosukhin, I. “Attention is All You Need.” Advances in Neural Information Processing Systems 30. NIPS, 2017.
+https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf</p>
 
 <p align = 'justify'>Gupta, V. “Understanding BigBird’s Block Sparse Attention.” Huggingface, Mar. 2021. https://huggingface.co/blog/big-bird</p>
 
