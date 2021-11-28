@@ -29,11 +29,11 @@
 
 <p align = 'justify'>The self-attention is associated with <i>head<sub>i</sub></i>, which is associated with <i>multi-head attention</i> as seen by above and below. The self-attention contains a matrix of queries multiplied by transposed key divided by a root square of key dimensionality in softmax function multiplied by values. The softmax is a generalized version of logistic function. The values can be considered as weight that can be updated. This self-attention is built on matrix multiplicaiton code in order to be more space-efficient and faster.</p>
 
-<div style="margin-left: 30px;"><img src="https://render.githubusercontent.com/render/math?math=Attention \left( Q,K,V \right) = softmax \left( \frac{QK^T}{\sqrt{d_k}} \right) V"/></div>
+        <img src="https://render.githubusercontent.com/render/math?math=Attention \left( Q,K,V \right) = softmax \left( \frac{QK^T}{\sqrt{d_k}} \right) V"/></div>
 
-<div><img src="https://render.githubusercontent.com/render/math?math=head_i = Attention(QW_i^Q,KW_i^K,VW_i^v)"/></div>
+        <img src="https://render.githubusercontent.com/render/math?math=head_i = Attention(QW_i^Q,KW_i^K,VW_i^v)"/></div>
 
-<div><img src="https://render.githubusercontent.com/render/math?math=MultiHead(Q,K,V) = Concat(head_i,...,head_h)W^0"/></div>
+        <img src="https://render.githubusercontent.com/render/math?math=MultiHead(Q,K,V) = Concat(head_i,...,head_h)W^0"/></div>
 
 
 <p align = 'justify'> The <i>head<sub>i</sub></i> has a vector of Q, K, and V each multplied by a vector of weights while the multi-head attention is simply a concatenation of <i>head<sub>i</sub></i> (Vaswani et al., 2017). Based on the graph theory, the problem is that the attention mechansim has quadratic dependency due to the fully connected graph. This is known to be <i>sparsification problem</i> (Zaheer et al., 2020). For this research, the XLNET is used to compare with Big Bird. Even though the change in this model is to use maximum log likelihood of the sequence with respects to permutation, the fundamental of the model remains the same (Yang et al., 2020). </p>
