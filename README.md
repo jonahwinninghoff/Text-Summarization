@@ -1,7 +1,7 @@
 # Comparing Performance and Accuracy of Big Bird and XLNet for Text Summarization
 
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-380/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 See the presentation ([PPT](https://github.com/jonahwinninghoff/Text-Summarization/raw/main/Presentation/BigBird.pptx) or [PDF](https://github.com/jonahwinninghoff/Text-Summarization/blob/main/Presentation/BigBird.pdf))
